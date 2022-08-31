@@ -47,7 +47,13 @@
     static $baseUrl;
 
     if ($baseUrl === null) {
-      $baseUrl = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
+      $isHttps =
+        (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+        || (isset($_SERVER['SERVER_PORT']) && (int) $_SERVER['SERVER_PORT'] === 443)
+        || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')
+      ;
+
+      $baseUrl = $isHttps ? 'https://' : 'http://';
 
       $IP = $_SERVER['HTTP_HOST'];
 
