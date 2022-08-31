@@ -42,7 +42,7 @@
   $html = template("base/$pageTemplate", [
     'userVerified' => $userVerified,
     'activeNav' => explode('/', $_GET['custom_query'] ?? '')[0],
-    'title' => $pageTitle,
+    'title' => $pageTitle . ' | Blog',
     'h1' => $pageH1,
     'content' => $pageContent,
     'left' => $pageLeft,
