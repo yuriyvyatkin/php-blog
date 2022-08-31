@@ -1,0 +1,16 @@
+<form class="form-group" method="POST">
+  <label for="category">Choose a category (categories in alphabetical order):</label>
+  <select class="form-control" id="category" name="id_category">
+    {% for category in categories %}
+      <option value="{{ category.id_category }}">
+        {{ category.title }}
+      </option>
+    {% endfor %}
+  </select>
+  </br>
+  <label for="title">New title:</label>
+  <input class="form-control" id="title" type="text" name="title">
+  </br>
+  <input class="btn btn-primary" type="submit" value="Edit">
+  </br>
+</form>

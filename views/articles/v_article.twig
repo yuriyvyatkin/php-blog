@@ -1,0 +1,16 @@
+<p>
+  <a class="btn btn-outline-primary" href="{{ BASE_URL }}category/{{ article.id_category }}">
+    Articles in category "{{ article.category_title }}"
+  </a>
+</p>
+<hr>
+<div class="article">
+  <h1 class="mb-3">{{ article.title }}</h1>
+  <div>
+    {% for paragraph in article.content %}
+      <p class="paragraph">{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+</div>
+<hr>
+<a class="btn btn-outline-dark" href="{{ BASE_URL }}">Move to the main page</a>

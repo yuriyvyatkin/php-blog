@@ -1,0 +1,12 @@
+<div class="articles">
+  {% for article in articles %}
+    <div class="article mb-4">
+      <h2>{{ article.title }}</h2>
+      <a class="btn btn-outline-primary" href="{{ BASE_URL }}article/{{ article.id_article }}">Read more</a>
+    </div>
+  {% endfor %}
+</div>
+{% if articles|length > 3 %}
+  <hr>
+  <a class="btn btn-outline-dark" href="javascript:window.scrollTo({ top: 0 })">Scroll to top of page</a>
+{% endif %}

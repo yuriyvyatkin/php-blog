@@ -1,0 +1,17 @@
+<h1>Log entries for {{ fileName }} <a class="btn btn-outline-primary" href="javascript:history.go(-1)">Previous page</a></h1>
+<table class="table table-striped mt-4 mb-2">
+  <tr>
+    {% for header in headers %}
+      <th>{{ header }}</th>
+    {% endfor %}
+  </tr>
+  {% for line in lines %}
+    <tr>
+      {% for element in line %}
+        <td>{{ element }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+<hr>
+<a class="btn btn-outline-dark" href="javascript:window.scrollTo({ top: 0 })">Scroll to top of page</a>

@@ -1,0 +1,8 @@
+<div class="categories">
+  {% for item in categoriesData %}
+    <div class="directory mb-4">
+      <h2>{{ item.name }}</h2>
+      <a class="btn btn-outline-primary" href="{{ BASE_URL }}logs_journal/{{ item.initialName }}">View <span class="badge bg-info align-middle">{{ item.filesAmount }}</span></a>
+    </div>
+  {% endfor %}
+</div>

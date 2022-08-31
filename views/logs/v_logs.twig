@@ -1,0 +1,16 @@
+<div>
+  <h1>Logs by days <a class="btn btn-outline-primary" href="javascript:history.go(-1)">Previous page</a></h1>
+  <ul class="list-group mt-4 mb-2">
+    {% for fileName in fileNames %}
+      <li class="list-group-item">
+        <a href="{{ BASE_URL }}logs_journal/{{ type }}/{{ fileName }}">
+          {{ fileName }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% if fileNames|length > 5 %}
+  <hr>
+  <a class="btn btn-outline-dark" href="javascript:window.scrollTo({ top: 0 })">Scroll to top of page</a>
+{% endif %}

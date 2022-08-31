@@ -1,0 +1,22 @@
+<form method="POST">
+  <div class="form-group">
+    <label for="auth-login">Login name</label>
+    <input class="form-control" id="auth-login" value="admin" type="text" name="login">
+  </div>
+  </br>
+  <div class="form-group">
+    <label for="auth-password">Password</label>
+    <input class="form-control" id="auth-password" value="1234" type="password" name="password">
+  </div>
+  </br>
+  <div class="form-check mb-3">
+    <input class="form-check-input" id="login-remember" type="checkbox" name="remember">
+    <label class="form-check-label" for="login-remember">
+      Remember me
+    </label>
+  </div>
+  {% if error %}
+    <p class="bg-warning center text-center mb-4">{{ error }}</p>
+  {% endif %}
+  <button class="btn btn-primary">Log in</button>
+</form>

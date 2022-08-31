@@ -1,0 +1,11 @@
+{% if responseCode is same as ('00000') %}
+  <div class="alert alert-success alert-dismissible">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    Your {{ entity }} was {{ action }}.
+  </div>
+{% elseif responseCode %}
+  <div class="alert alert-danger alert-dismissible">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    Your {{ entity }} wasn't {{ action }}. Error code: {{ responseCode }}.
+  </div>
+{% endif %}

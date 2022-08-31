@@ -1,0 +1,10 @@
+<form class="form-group" method="POST">
+  <label for="title">Title:</label>
+  <input class="form-control" id="title" type="text" name="title" value="{{ fields.title ?? '' }}">
+  </br>
+  {% if error %}
+    <p class="bg-warning center text-center mb-4">{{ error }}</p>
+  {% endif %}
+  <input class="btn btn-primary" type="submit" value="Add">
+  </br>
+</form>

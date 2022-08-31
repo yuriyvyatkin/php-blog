@@ -1,0 +1,14 @@
+<form class="form-group" method="POST">
+  <label for="category">Choose a category:</label>
+  <select class="form-control" id="category" name="id_category">
+    {% for category in categories %}
+      <option value="{{ category.id_category }}">
+        {{ category.title }}
+      </option>
+    {% endfor %}
+  </select>
+  </br>
+  <input class="btn btn-primary" type="submit" value="Delete">
+  </br>
+</form>
+

@@ -1,0 +1,1 @@
+{"time":"21:25:43","errorMessage":"Uncaught Error: Cannot use a scalar value as an array in C:\\xampp\\htdocs\\php\\controllers\\article.php:19\nStack trace:\n#0 C:\\xampp\\htdocs\\php\\index.php(16): include_once()\n#1 {main}\n  thrown"}

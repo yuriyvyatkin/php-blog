@@ -1,0 +1,14 @@
+{
+    "name": "blog/blog",
+    "type": "project",
+    "license": "Mozilla Public License 2.0",
+    "authors": [
+        {
+            "name": "Yuriy Vyatkin"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.3"
+    },
+    "minimum-stability": "stable"
+}

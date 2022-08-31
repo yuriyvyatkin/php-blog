@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-size: 1.2rem;
+
+  color: hsl(0, 0%, 52%);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+input,
+textarea,
+select,
+.paragraph {
+  font-size: larger !important;
+}
+
+input {
+  font-size: 1.6rem;
+}
+
+.form-check-input {
+  cursor: pointer !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
+.navbar {
+  font-size: 1.2rem;
+
+  color: #007bff;
+  background-color: #f9f9f9;
+}
+
+.nav-item a:hover,
+.dropdown:hover {
+  font-weight: 500;
+}
+
+.nav-item.highlight > a,
+.nav-item.highlight > a:hover {
+  font-weight: bold;
+
+  color: #007bff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+  transform: rotateZ(90deg);
+}
+
+.navbar-toggler.collapsed:focus,
+.navbar-toggler.collapsed:active {
+  box-shadow: none;
+}
+
+.form-check {
+  padding-left: 29px;
+}

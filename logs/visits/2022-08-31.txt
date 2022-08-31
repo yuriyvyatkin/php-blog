@@ -1,0 +1,13 @@
+{"dt":"06:12:04","ip":"::1","uri":"\/hw\/","referer":""}
+{"dt":"06:12:06","ip":"::1","uri":"\/hw\/add_article","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:06","ip":"::1","uri":"\/hw\/\/login","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:06","ip":"::1","uri":"\/hw\/login","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:07","ip":"::1","uri":"\/hw\/","referer":"http:\/\/localhost\/hw\/login"}
+{"dt":"06:12:13","ip":"::1","uri":"\/hw\/logs_journal","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:13","ip":"::1","uri":"\/hw\/\/login","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:13","ip":"::1","uri":"\/hw\/login","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:15","ip":"::1","uri":"\/hw\/login","referer":"http:\/\/localhost\/hw\/login"}
+{"dt":"06:12:15","ip":"::1","uri":"\/hw\/","referer":"http:\/\/localhost\/hw\/login"}
+{"dt":"06:12:17","ip":"::1","uri":"\/hw\/logs_journal","referer":"http:\/\/localhost\/hw\/"}
+{"dt":"06:12:19","ip":"::1","uri":"\/hw\/logs_journal\/visits","referer":"http:\/\/localhost\/hw\/logs_journal"}
+{"dt":"06:12:22","ip":"::1","uri":"\/hw\/logs_journal\/visits\/2022-08-31.txt","referer":"http:\/\/localhost\/hw\/logs_journal\/visits"}

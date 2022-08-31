@@ -1,0 +1,22 @@
+<form class="form-group" method="POST">
+  <input type="text" name="id_article" value="{{ fields.id_article }}" hidden>
+  <label for="title">Title:</label>
+  <input class="form-control" id="title" type="text" name="title" value="{{ fields.title }}">
+  </br>
+  <label for="content">Content:</label>
+  <textarea class="form-control" id="content" type="text" name="content" rows="10" cols="50">{{ fields.content }}</textarea>
+  </br>
+  <label for="category">Choose a category:</label>
+  <select class="form-control" id="category" name="id_category">
+    {% for category in categories %}
+      <option value="{{ category.id_category }}" {{ category.id_category == fields.id_article ? 'selected' : '' }}>
+        {{ category.title }}
+      </option>
+    {% endfor %}
+  </select>
+  </br>
+  <input class="btn btn-primary" type="submit" value="Edit">
+  </br>
+</form>
+<hr>
+<a class="btn btn-outline-dark" href="{{ BASE_URL }}">Move to the main page</a>
